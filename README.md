@@ -98,11 +98,8 @@ Flowchart of application process :-
 ![plot](./Flowchart.png)
 
 ### Screenshots
+![image](https://user-images.githubusercontent.com/69417609/137445866-9bd78fdf-a7db-4412-9edc-50dc84eaf236.png)
+![image](https://user-images.githubusercontent.com/69417609/137445947-1aa69fef-d477-4fc4-a4e5-d525bb728f6b.png)
+![image](https://user-images.githubusercontent.com/69417609/137446091-8bad7c40-2066-4f5f-95e4-e3fa0f9f79f0.png)
+![image](https://user-images.githubusercontent.com/69417609/137446138-8fd562df-977d-488b-8eb9-f53806bbd6d1.png)
 
-<!-- ![plot](./Opening1.PNG)
-
-![plot](./Opening2.PNG)
-
-![plot](./Opening3.PNG)
-
-![plot](./Result.PNG) -->
