@@ -1,0 +1,14 @@
+{% extends 'wine_app/base.html' %}
+{% block content %}
+    <h1>Prediction</h1>
+    <div class="progress">
+        <div class="determinate" ></div>
+    </div>
+    <h1>Quality : {{pred}}</h1>
+    
+    <script>
+        var p=(parseInt("{{pred}}")*10).toString() + "%";
+        const element = document.getElementsByClassName("determinate")
+        element[0].style.width = p;
+    </script>
+{% endblock %}

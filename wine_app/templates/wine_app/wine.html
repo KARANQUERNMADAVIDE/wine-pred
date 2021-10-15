@@ -1,0 +1,69 @@
+{% extends 'wine_app/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+        <div class="carousel-item active">
+            <img src="{% static '/images/wine2.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static '/images/wine2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>
+        </div>
+    </div> -->
+    <div class="form-container">
+        <form method="POST" action="{% url 'winequality'%}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Fixed Acidity</label>
+                <input type="text" class="form-control" id="fixed acidity" name="fixed acidity" placeholder="Eg. 7.4">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Volatile Acidity</label>
+                <input type="text" class="form-control" id="volatile acidity" name="volatile acidity" placeholder="Eg. 0.700">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Citric Acid</label>
+                <input type="text" class="form-control" id="citric acid" name="citric acid" placeholder="Eg. 0.00">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Residual Sugar</label>
+                <input type="text" class="form-control" id="residual sugar" name="residual sugar" placeholder="Eg. 1.9">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Chlorides</label>
+                <input type="text" class="form-control" id="chlorides" name="chlorides" placeholder="Eg. 0.076">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Free Sulfur Dioxide</label>
+                <input type="text" class="form-control" id="free sulfur dioxide" name="free sulfur dioxide" placeholder="Eg. 11.0">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Total Sulfur Dioxide</label>
+                <input type="text" class="form-control" id="total sulfur dioxide" name="total sulfur dioxide" placeholder="Eg. 34.0">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Density</label>
+                <input type="text" class="form-control" id="density" name="density" placeholder="Eg. 0.99780">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">pH</label>
+                <input type="text" class="form-control" id="pH" name="pH" placeholder="Eg. 3.51">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Sulphates</label>
+                <input type="text" class="form-control" id="sulphates" name="sulphates" placeholder="Eg. 0.56">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Alcohol</label>
+                <input type="text" class="form-control" id="alcohol" name="alcohol" placeholder="Eg. 9.4">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+{% endblock %}
